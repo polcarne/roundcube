@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 # Verificar si el usuario tiene permisos de root
 if [ $(whoami) == "root" ]; then
