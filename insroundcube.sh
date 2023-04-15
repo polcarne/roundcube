@@ -1,4 +1,6 @@
-#!/bin/bash
+# !/bin/bash
+
+clear
 
 # Verificar si el usuario tiene permisos de root
 if [ $(whoami) == "root" ]; then
@@ -69,12 +71,12 @@ fi
 
 # Descargar Roundcube
 echo -e "${COLOR_VERDE}Descargando Roundcube...${COLOR_NORMAL}"
-wget https://github.com/roundcube/roundcubemail/releases/download/1.4.12/roundcubemail-1.4.12-complete.tar.gz -P /tmp/ > /dev/null 2>&1
+wget https://github.com/roundcube/roundcubemail/releases/download/1.6.1/roundcubemail-1.6.1-complete.tar.gz -P /tmp/ > /dev/null 2>&1
 
 # Descomprimir y mover Roundcube
 echo -e "${COLOR_VERDE}Descomprimiendo Roundcube...${COLOR_NORMAL}"
-tar -xzf /tmp/roundcubemail-1.4.12-complete.tar.gz -C /tmp/ > /dev/null 2>&1
-mv /tmp/roundcubemail-1.4.12 /var/www/html/roundcube > /dev/null 2>&1
+tar -xzf /tmp/roundcubemail-1.6.1-complete.tar.gz -C /tmp/ > /dev/null 2>&1
+mv /tmp/roundcubemail-1.6.1 /var/www/html/roundcube > /dev/null 2>&1
 
 # Configurar Roundcube
 echo -e "${COLOR_VERDE}Configurando Roundcube...${COLOR_NORMAL}"
