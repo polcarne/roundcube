@@ -5,7 +5,6 @@ if [ $(whoami) == "root" ]; then
 	echo -e "\033[0;32mEts root.\033[0m"
 else
 	echo -e "\033[0;31mNo ets root.\033[0m"
-	exit
 fi
 
 # Utilizar colores para resaltar la información
